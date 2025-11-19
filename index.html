@@ -1,2 +1,336 @@
-<h1>blabla</h1>
-<h2>hola</h2>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAPAS COLD</title>
+    
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="STYLE.CSS/style.css">
+
+    <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <link rel="icon" href="img/favicon.png" type="image/jpg">
+
+    </head>
+    
+   
+<body>
+ 
+<header>
+   <!-- BARRA NAVEGACION -->
+   <nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid">
+   <!-- LOGO -->
+    <a class="navbar-brand me-auto" href="#">
+  <img src="MEDIA/IMG/LOGO.webp" alt="Logo" class="logo-img">
+</a>
+   
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+       <img src="MEDIA/IMG/LOGO.webp" alt="Logo" class="logo-img-offcanvas">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2" href="#">Collection</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2" href="#">Stores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2" href="#">Sneakers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2" href="#">FAQ</a>
+          </li>
+        </ul>
+      
+      </div>
+    </div>
+    <a href="#" class="login-button">Login</a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+</header>
+
+
+    <main>
+      
+        <!-- prueba producto -->
+          <div class="container-xl product-page">
+    <div class="row g-4">
+
+       <!-- COLUMNA IZQUIERDA: GALERÍA -->
+<div class="col-lg-7 d-flex justify-content-center">
+  <div class="row g-1 product-gallery product-gallery-inner">
+    <!-- Foto 1 -->
+    <div class="col-12 col-lg-6">
+      <figure class="product-photo">
+        <img src="MEDIA/IMG/zapa-1.jpg" alt="Cold Hook Sneaker Pink vista lateral" />
+      </figure>
+    </div>
+
+    <!-- Foto 2 -->
+    <div class="col-12 col-lg-6">
+      <figure class="product-photo">
+        <img src="MEDIA/IMG/zapa-2.jpg" alt="Cold Hook Sneaker Pink vista 3/4" />
+      </figure>
+    </div>
+
+    <!-- Foto 3 -->
+    <div class="col-12 col-lg-6">
+      <figure class="product-photo">
+        <img src="MEDIA/IMG/zapa-3.jpg" alt="Cold Hook Sneaker Pink suela" />
+      </figure>
+    </div>
+
+    <!-- Foto 4 -->
+    <div class="col-12 col-lg-6">
+      <figure class="product-photo">
+        <img src="MEDIA/IMG/zapa-4.jpg" alt="Cold Hook Sneaker Pink detalle" />
+      </figure>
+    </div>
+
+    <!-- Foto 5 -->
+    <div class="col-12 col-lg-6">
+      <figure class="product-photo">
+        <img src="MEDIA/IMG/zapa-5.jpg" alt="Cold Hook Sneaker Pink vista superior" />
+      </figure>
+    </div>
+
+    <!-- Foto 6 -->
+    <div class="col-12 col-lg-6">
+      <figure class="product-photo">
+        <img src="MEDIA/IMG/zapa-6.jpg" alt="Cold Hook Sneaker Pink vista trasera" />
+      </figure>
+    </div>
+  </div>
+</div>
+
+      <!-- COLUMNA DERECHA: INFO PRODUCTO (STICKY) -->
+      <div class="col-lg-5">
+        <aside class="product-sidebar">
+          <p class="text-uppercase text-muted mb-1 small">
+            Cold Hook
+          </p>
+          <h1 class="product-title h3 mb-2">
+            COLD HOOK SNEAKER YELLOW
+          </h1>
+
+          <div class="d-flex align-items-baseline gap-2 mb-2">
+            <span class="product-price">€129,00</span>
+            <!-- Si quieres precio tachado: -->
+            <!-- <span class="product-old-price">€159,00</span> -->
+          </div>
+          <p class="small text-muted mb-3">
+            Get it for <strong>€116,10</strong> – join our newsletter today!
+          </p>
+
+          <!-- COLORES -->
+          <div class="mb-4">
+            <p class="small text-uppercase fw-semibold mb-2">
+              Colors
+            </p>
+            <div class="d-flex gap-2">
+  <button class="color-dot color-pink active" type="button" aria-label="Pink"></button>
+  <button class="color-dot color-grey" type="button" aria-label="Grey"></button>
+  <button class="color-dot color-black" type="button" aria-label="Black"></button>
+  <button class="color-dot color-yellow" type="button" aria-label="Yellow"></button>
+</div>
+          </div>
+
+          <!-- TALLAS -->
+          <div class="mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <p class="small text-uppercase fw-semibold mb-0">
+                Size (EU)
+              </p>
+             
+            </div>
+
+            <div class="d-flex flex-wrap gap-2">
+              <!-- Marca activa la talla seleccionada con .active -->
+              <button class="btn btn-outline-dark size-option active">36</button>
+              <button class="btn btn-outline-dark size-option">37</button>
+              <button class="btn btn-outline-dark size-option">38</button>
+              <button class="btn btn-outline-dark size-option">39</button>
+              <button class="btn btn-outline-dark size-option">40</button>
+              <button class="btn btn-outline-dark size-option">41</button>
+              <button class="btn btn-outline-dark size-option">42</button>
+              <button class="btn btn-outline-dark size-option">43</button>
+              <button class="btn btn-outline-dark size-option">44</button>
+              <button class="btn btn-outline-dark size-option">45</button>
+              <button class="btn btn-outline-dark size-option">46</button>
+            </div>
+          </div>
+
+          <!-- BOTONES PRINCIPALES -->
+          <div class="d-grid gap-2 mb-3">
+            <button class="btn btn-add-cart text-uppercase">
+              Add to cart
+            </button>
+            <button class="btn btn-paypal">
+              Pay with <strong>PayPal</strong>
+            </button>
+          </div>
+
+          <div class="d-grid mb-3">
+            <button class="btn btn-outline-dark btn-favorite">
+              ☆ Add to favorites
+            </button>
+          </div>
+
+         
+
+          <!-- ENVÍO -->
+          <div class="border-top pt-3 mb-3">
+            <button
+              class="btn w-100 d-flex justify-content-between align-items-center px-0"
+              type="button"
+            >
+              <span class="small fw-semibold text-uppercase">
+                We ship to Spain
+              </span>
+              <span>🇪🇸</span>
+            </button>
+          </div>
+
+          <!-- ACORDEÓN DETALLES -->
+          <div class="accordion" id="productAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingDetails">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseDetails"
+                  aria-expanded="false"
+                  aria-controls="collapseDetails"
+                >
+                  Product details
+                </button>
+              </h2>
+              <div
+                id="collapseDetails"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingDetails"
+                data-bs-parent="#productAccordion"
+              >
+                <div class="accordion-body small">
+                  Zapatilla inspirada en motorsport con upper acolchado,
+                  cierre envolvente y suela de goma de alta durabilidad.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSize">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSize"
+                  aria-expanded="false"
+                  aria-controls="collapseSize"
+                >
+                  Size chart
+                </button>
+              </h2>
+              <div
+                id="collapseSize"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingSize"
+                data-bs-parent="#productAccordion"
+              >
+                <div class="accordion-body small">
+                  Se recomienda elegir tu talla habitual de zapatilla urbana.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingStore">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseStore"
+                  aria-expanded="false"
+                  aria-controls="collapseStore"
+                >
+                  Store availability
+                </button>
+              </h2>
+              <div
+                id="collapseStore"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingStore"
+                data-bs-parent="#productAccordion"
+              >
+                <div class="accordion-body small">
+                  Disponible online y en tiendas seleccionadas.
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+    <div class="d-flex justify-content-center mb-4">
+      <img src="MEDIA/IMG/LOGO.webp" alt="Logo Zapas Cold" class="footer-logo">
+    </div>
+    </main>
+    
+    <footer class="footer-main mt-5">
+  <div class="container-fluid">
+
+    <!-- ICONOS REDES ARRIBA -->
+    <div class="footer-social d-flex justify-content-center align-items-center gap-4 mb-3">
+      <a href="#" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+    </div>
+
+    <!-- TU LOGO ABAJO, MÁS GRANDE -->
+
+
+    <!-- BARRA BLACK FRIDAY -->
+    <div class="footer-promo d-flex flex-column flex-md-row align-items-center justify-content-center gap-3 text-center">
+      <span class="footer-promo-text">
+        POR BLACKFRIDAY, LLÉVATE UN 15% DE DESCUENTO
+      </span>
+      <button class="footer-promo-btn">
+        INSCRÍBETE
+      </button>
+    </div>
+
+  </div>
+</footer>
+
+
+    <script src="js/jquery-3.7.1.js"></script>
+    
+    <script src="js/script.js"></script>
+
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
