@@ -365,3 +365,15 @@ visibility: visible;
     padding: 0.9rem 1rem;
   }
    }
+
+/* carrousel bootstrap galeria */
+.carousel {
+  max-width: 900px;    
+  margin: 0 auto;        
+}
+
+.carousel-img {
+  height: 400px;        
+  object-fit: cover;    
+
+}
