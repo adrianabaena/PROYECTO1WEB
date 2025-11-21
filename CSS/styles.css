@@ -520,19 +520,30 @@ visibility: visible;
   }
 }
 
+.bloque-imagen {
+  width: 100%;
+  overflow: hidden; /* evita desbordes */
+  height: 500px;
+  margin-bottom: 5%;
+}
 
+.bloque-imagen img {
+  width: 100%;
+  height: auto;
+  display: block; /* elimina espacios blancos debajo */
+}
 
 
 .typed-texto{
   font-size: 5em;
-  color: #911111;
+  color: #e41a1a;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   text-align: center;
 }
 
 .typed-cursor {
-  color: #911111 !important;
+  color: #e41a1a !important;
   font-size: 5em;
 }
 
