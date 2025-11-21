@@ -46,3 +46,22 @@ lerp: 0.1
 })();
 
 
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  new Typed('.typed-texto', {
+    strings: ["TOO COLD FOR HOOK SNEAKERS"],
+    typeSpeed: 60,      // velocidad al escribir
+    backSpeed: 60,      // velocidad al borrar
+    backDelay: 1000,    // pausa antes de borrar
+    loop: true,         // repetir para siempre
+    showCursor: true,
+    cursorChar: '|'
+  });
+});
+
+
+
+
+
+
