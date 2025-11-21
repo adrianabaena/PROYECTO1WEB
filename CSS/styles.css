@@ -647,4 +647,30 @@ visibility: visible;
   .video-box video{
     margin-right: 15%;
   }
+
+
+}
+
+.solo-movil {
+  display: none;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .solo-movil {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;           
+    left: 50%;        
+    transform: translate(-50%, -50%);
+    width: 70%;
+    z-index: 9999;  
+}
+
+.solo-movil img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 }
