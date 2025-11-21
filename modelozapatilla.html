@@ -9,11 +9,16 @@
     <!-- BOOTSTRAP CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="STYLE.CSS/style.css">
+    <link rel="stylesheet" href="CSS/styles.css">
 
     <head>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
       <link rel="icon" href="img/favicon.png" type="image/jpg">
+
+      <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    </script>
 
     </head>
     
@@ -25,7 +30,7 @@
    <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container-fluid">
    <!-- LOGO -->
-    <a class="navbar-brand me-auto" href="#">
+    <a class="navbar-brand me-auto" href="landing.html">
   <img src="MEDIA/IMG/LOGO.webp" alt="Logo" class="logo-img">
 </a>
    
@@ -37,7 +42,7 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Shop</a>
+            <a class="nav-link mx-lg-2 active" aria-current="page" href="landing.html">Shop</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-lg-2" href="#">Collection</a>
@@ -46,10 +51,10 @@
             <a class="nav-link mx-lg-2" href="#">Stores</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="#">Sneakers</a>
+            <a class="nav-link mx-lg-2" href="index.html">Sneakers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="#">FAQ</a>
+            <a class="nav-link mx-lg-2" href="modelozapatilla.html">Models</a>
           </li>
         </ul>
       
@@ -62,6 +67,25 @@
   </div>
 </nav>
 </header>
+
+<div class="page">
+  <div class="viewer-card">
+
+    <model-viewer
+      id="myModel"
+      class="model-viewer"
+      src="MEDIA/IMG/CC_LOW-COMBI-PINK.glb"
+      alt="Astronauta 3D"
+      camera-controls
+      auto-rotate
+      autoplay
+      touch-action="pan-y"
+      shadow-intensity="1"
+      exposure="1">
+    </model-viewer>
+  </div>
+</div>
+
 
 
 

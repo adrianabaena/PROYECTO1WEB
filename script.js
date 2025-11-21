@@ -46,6 +46,62 @@ lerp: 0.1
 })();
 
 
+document.addEventListener('DOMContentLoaded', function () {
+  const section = document.querySelector('.video-text-section');
+  const video = section.querySelector('video');
+
+  let scrollStart = 0;
+  let scrollEnd = 0;
+  let duration = 0;
+
+  function setupScrollPoints() {
+    const rect = section.getBoundingClientRect();
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    // punto donde empezamos a “scrubear” el vídeo
+    scrollStart = scrollTop + rect.top;
+
+    // punto donde dejamos de controlar el vídeo (cuando la parte de abajo de la sección
+    // llega al borde inferior del viewport)
+    scrollEnd = scrollTop + rect.bottom - window.innerHeight;
+  }
+
+  function onScroll() {
+    const scrollPos = window.pageYOffset || document.documentElement.scrollTop;
+
+    // antes de la sección
+    if (scrollPos <= scrollStart) {
+      video.currentTime = 0;
+      return;
+    }
+
+    // después de la sección
+    if (scrollPos >= scrollEnd) {
+      video.currentTime = duration;
+      return;
+    }
+
+    const progress = (scrollPos - scrollStart) / (scrollEnd - scrollStart); // 0 → 1
+    const time = progress * duration;
+    video.currentTime = time;
+  }
+
+  // Cuando el vídeo sabe su duración, configuramos todo
+  video.addEventListener('loadedmetadata', function () {
+    duration = video.duration || 0;
+    setupScrollPoints();
+    onScroll(); // posición inicial
+  });
+
+  window.addEventListener('resize', function () {
+    setupScrollPoints();
+    onScroll();
+  });
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+});
+
+
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -59,6 +115,30 @@ document.addEventListener('DOMContentLoaded', function () {
     cursorChar: '|'
   });
 });
+
+
+// Seleccionamos el <model-viewer>
+const viewer = document.querySelector("#myModel");
+
+// Pausar la rotación automática mientras se arrastra / pulsa
+const stopAutoRotate = () => {
+  viewer.autoRotate = false;
+};
+
+const startAutoRotate = () => {
+  viewer.autoRotate = true;
+};
+
+// Ratón
+viewer.addEventListener("pointerdown", stopAutoRotate);
+viewer.addEventListener("pointerup", startAutoRotate);
+viewer.addEventListener("pointercancel", startAutoRotate);
+viewer.addEventListener("pointerleave", startAutoRotate);
+
+// Touch extra (por si acaso, algunos navegadores)
+viewer.addEventListener("touchstart", stopAutoRotate);
+viewer.addEventListener("touchend", startAutoRotate);
+
 
 
 
